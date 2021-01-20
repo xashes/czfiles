@@ -1,0 +1,11 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/sh
+ssh-keygen -t ed25519 -C "xashes@outlook.com"
+eval "(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+sudo pacman -S xclip --needed
+xclip -selection clipboard < ~/.ssh/id_ed25519.pub
+{{ else if eq .chezmoi.os "darwin" -}}
+#!/bin/sh
+ssh-keygen -t ed25519 -C "xashes@outlook.com"
+{{ end -}}
