@@ -1,0 +1,4 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/sh
+set LC_ALL C xdg-user-dirs-update --force
+{{ end -}}
