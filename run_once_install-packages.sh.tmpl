@@ -1,6 +1,7 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/sh
 sudo pacman -Syu
+sudo pacman -S base-devel --needed
 sudo pacman -S yay --needed
 sudo pacman -S vim --needed
 
