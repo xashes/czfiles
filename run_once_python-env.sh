@@ -8,5 +8,6 @@ pip install -U pytest
 pip install -U black
 pip install -U pyflakes
 pip install -U isort
+pip install -U paramiko
 
 sudo npm install -g pyright
