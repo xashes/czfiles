@@ -1,0 +1,7 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/sh
+sudo pacman -S v2ray --needed
+sudo systemctl start v2ray
+{{ else if eq .chezmoi.os "darwin" -}}
+#!/bin/sh
+{{ end -}}
