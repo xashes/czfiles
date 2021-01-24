@@ -3,9 +3,15 @@
 sudo pacman -Syu
 sudo pacman -S yay --needed
 sudo pacman -S vim --needed
-sudo pacman -S emacs ripgrep --needed
+
+sudo pacman -S emacs --needed
+sudo pacman -S ripgrep --needed
 sudo pacman -S fd --needed
 sudo pacman -S proxychains-ng --needed
+
+# need by cht.sh shell
+sudo pacman -S rlwrap --needed
+sudo pacman -S xsel --needed
 {{ else if eq .chezmoi.os "darwin" -}}
 #!/bin/sh
 brew install ripgrep
