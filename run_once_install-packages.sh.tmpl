@@ -10,9 +10,20 @@ sudo pacman -S ripgrep --needed
 sudo pacman -S fd --needed
 sudo pacman -S proxychains-ng --needed
 
+sudo pacman -S cmake --needed
+
 # need by cht.sh shell
 sudo pacman -S rlwrap --needed
 sudo pacman -S xsel --needed
+
+# rime
+sudo pacman -S fcitx5-im --needed
+sudo pacman -S fcitx5-chinese-addons --needed
+
+# font
+sudo pacman -S wqy-zenhei
+sudo pacman -S wqy-microhei
+
 {{ else if eq .chezmoi.os "darwin" -}}
 #!/bin/sh
 brew install ripgrep
