@@ -4,6 +4,7 @@ sudo pacman -Syu
 sudo pacman -S base-devel --needed
 sudo pacman -S yay --needed
 sudo pacman -S vim --needed
+sudo pacman -S neovim --needed
 
 sudo pacman -S emacs --needed
 sudo pacman -S ripgrep --needed
@@ -21,8 +22,8 @@ sudo pacman -S fcitx5-im --needed
 sudo pacman -S fcitx5-chinese-addons --needed
 
 # font
-sudo pacman -S wqy-zenhei
-sudo pacman -S wqy-microhei
+sudo pacman -S wqy-zenhei --needed
+sudo pacman -S wqy-microhei --needed
 
 {{ else if eq .chezmoi.os "darwin" -}}
 #!/bin/sh
