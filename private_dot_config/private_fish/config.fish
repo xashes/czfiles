@@ -7,6 +7,7 @@ set -x EDITOR vim
 
 alias cht cht.sh
 alias cz chezmoi
+alias vim nvim
 
 # git alias
 alias gst "git status"
