@@ -12,6 +12,7 @@ pip install -U isort
 pip install -U paramiko
 pip install -U pandas
 pip install -U jupyterlab
-pip install -U xonsh[full]
+# pip install -U xonsh[full]
+pip install -U gpiozero
 
 sudo npm update -g pyright
